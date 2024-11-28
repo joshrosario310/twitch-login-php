@@ -22,7 +22,7 @@ $Twitch = new Twitch($credentials);
 <h1>Twitch Login</h1>
 
 <?php if (isset($_GET['code'])): ?>
-  <?php $Twitch->accessToken = $_GET['code']; ?>
+  <?php $Twitch->accessCode = $_GET['code']; ?>
   <pre>
     <?php print_r($Twitch->fetchUser('IrateTV')); ?>
   </pre>
